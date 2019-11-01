@@ -17,14 +17,14 @@ router.get("/signin", (req, res, next) => {});
 
 router.post("/signin", (req, res, next) => {});
 
-router.get("crud-cream/task", function(req, res) {});
+router.get("GrudCream/Grud", function(req, res) {});
 
-router.get("crud-cream/task/:_id", function(req, res) {});
+router.get("GrudCream/Grud/:_id", function(req, res) {});
 
 //Grud
 
 router.post("/GrudCream/Grud", function(req, res) {
-  console.log("POST /crud-name/tasks");
+  console.log("POST /GrudCream/GrudCream");
   console.log(req.body);
   let GrudCream = new GrudCream();
   GrudCream.author = req.body.author;
