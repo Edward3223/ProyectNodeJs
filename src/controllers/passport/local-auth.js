@@ -9,6 +9,6 @@ passport.use(
       passwordField: "password",
       passReqToCallback: true
     },
-    (req, user, passport) => {}
+    (req, user, passport, done) => {}
   )
 );

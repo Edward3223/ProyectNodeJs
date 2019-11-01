@@ -4,6 +4,8 @@ const bodyParse = require("body-parser");
 
 //Utilities
 
+require("./controllers/database");
+
 app.use(bodyParse.json());
 app.use("/", require("./controllers/routers/indexroute"));
 
