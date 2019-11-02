@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+<div class="container">
+  <div class="container">
+    <h3>Lista de helados</h3>
+
+    <a class="btn btn-lg btn-primary" href="/icecream/new">Add New IceCream</a>
+  </div>
+
+  <div class="container">
+    <ul>
+      <% icecream.forEach(function(icecream){ %>
+      <div>
+        <li><%= icecream.name %></li>
+        <strong><%= icecream.username %></strong>
+        <div>
+          <p><%= icecream.description %></p>
+        </div>
+      </div>
+
+      <% }); %>
+    </ul>
+  </div>
+</div>

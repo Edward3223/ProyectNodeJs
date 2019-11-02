@@ -1,0 +1,36 @@
+<% include ./partials/header %>
+
+<h1 align="center">Login!</h1>
+
+<link rel="stylesheet" type="text/css" href="/views/partials/style/style.css" />
+
+<form action="/login" method="POST">
+  <div class="col-sm-3 my-1">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="addon-wrapping">User</span>
+    </div>
+    <input
+      name="username"
+      type="text"
+      class="form-control"
+      placeholder="Username"
+      aria-label="Username"
+      aria-describedby="addon-wrapping"
+    />
+  </div>
+
+  <div class="col-sm-3 my-1">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="addon-wrapping">password</span>
+    </div>
+    <input
+      name="password"
+      type="text"
+      class="form-control"
+      placeholder="Username"
+      aria-label="Username"
+      aria-describedby="addon-wrapping"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary" value="Login!">Sign In</button>
+</form>
